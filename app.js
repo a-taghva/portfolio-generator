@@ -172,3 +172,8 @@ const mockData = {
 };
 
 const pageHTML = generatePage(mockData);
+fs.writeFile("./index.html", pageHTML, err => {
+  if (err)  throw new Error(err)
+
+  console.log('Page has been created, check out index.html in this repositroy to see it!')
+})
