@@ -26,7 +26,35 @@ const promptUser = () => {
           return false;
         }
       }
-    }
+    },
+    {
+      type: 'input',
+      name: 'github',
+      message: 'Enter your Github Username (Required)',
+      validate: userName => {
+        if (userName) {
+          return true;
+        } else {
+          console.log('Enter your github user name please!');
+          return false;
+        }
+      }
+    },
+    {
+      type: 'confirm',
+      name: 'confirmAbout',
+      message: 'Would you like to enter some information about yourself for and "About" section?',
+      default: true
+    },
+    {
+      type: 'input',
+      name: 'about',
+      message: 'Provide some information about yourself:',
+      when: ({ confirmAbout }) => {
+        if (confirmAbout) return true;
+        else return false;
+      }
+    },
   ]);
 };
 
