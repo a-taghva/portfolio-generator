@@ -153,9 +153,17 @@ const mockData = {
     {
       name: 'Taskinator',
       description:
-      'Duis consectetur nunc nunc. Morbi finibus non sapien nec pharetra. Fusce nec dignissim orci, ac interdum ipsum. Morbi mattis justo sed commodo pellentesque. Nulla eget fringilla nulla. Integer gravida magna mi, id efficitur metus tempus et. Nam fringilla elit dapibus pellentesque cursus.',
-      langauges: ['JavaScript', 'jQuery', 'CSS', "XML", 'Bootstrap'],
+        'Duis consectetur nunc nunc. Morbi finibus non sapien nec pharetra. Fusce nec dignissim orci, ac interdum ipsum. Morbi mattis justo sed commodo pellentesque. Nulla eget fringilla nulla. Integer gravida magna mi, id efficitur metus tempus et. Nam fringilla elit dapibus pellentesque cursus.',
+      languages: ['JavaScript', 'HTML', 'CSS'],
       link: 'https://github.com/learnantino/taskmaster-pro',
+      feature: false,
+      confirmAddProject: true,
+    },
+    {
+      name: 'Taskmaster Pro',
+      description:
+        'Duis consectetur nunc nunc. Morbi finibus non sapien nec pharetra. Fusce nec dignissim orci, ac interdum ipsum. Morbi mattis justo sed commodo pellentesque. Nulla eget fringilla nulla. Integer gravida magna mi, id efficitur metus tempus et. Nam fringilla elit dapibus pellentesque cursus.',
+      languages: ['JavaScript', 'jQuery', 'CSS', 'HTML', 'Bootstrap'],
       feature: false,
       confirmAddProject: true,
     },
